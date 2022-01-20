@@ -1,0 +1,851 @@
+w/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar.bg-dark {
+  background-color: rgba(33, 37, 41, 0.596) !important;
+}
+
+.navbar-brand {
+  font-family: Lancelot;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(images/healthy_lunch.jpg);
+  background-size: cover;
+  height: 650px;
+  position: relative;
+}
+
+.jumbotron .container-fluid {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(47, 110, 66, 0.596), rgba(0, 0, 0, 0));
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.jumbotron .display-5 {
+  color: white;
+  margin-top: 50px;
+  padding-left: 35px;
+  font-family: Kelly Slab;
+  font-size: 55px;
+}
+
+.jumbotron .col-md-8 {
+  color: white;
+  padding-left: 35px;
+  font-family: Harlow Solid Italic;
+  font-style: italic;
+  font-size: 10px;
+}
+
+/* SLIDE 1 */
+.container-slide {
+  position: relative;
+  margin-top: 50px;
+}
+
+.container-slide .row-1 .row-2 {
+  z-index: 1;
+  position: relative;
+}
+
+.container-slide .row {
+  position: absolute;
+  height: 650px;
+}
+
+.container-slide .img-fluid {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  left: 100px;
+}
+
+.container-slide .col-sm-9 .col-8 {
+  position: absolute;
+  width: 60px;
+  height: 440px;
+  padding-left: 50px;
+  top: 50px;
+
+  font-family: Harlow Solid Italic;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.container-slide .col-sm-9 .col-4 {
+  top: 5px;
+  height: 500px;
+  left: 450px;
+  position: absolute;
+}
+
+/* FORM */
+
+/* HITUNG BERAT BADAN */
+.container-slide .col-4 .bb {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 450px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  margin-right: 150px;
+}
+
+.container-slide .col-4 .gender {
+  vertical-align: middle;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 1;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+.container-slide .col-4 .gd {
+  margin: 0px 0px 0.9375rem;
+  padding: 0px;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(54, 69, 79);
+  text-align: center;
+}
+
+.container-slide .col-4 .input-male {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.container-slide .col-4 .male {
+  vertical-align: middle;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 1;
+  padding-left: -20px;
+  padding-right: -20px;
+  flex: 0 0 50%;
+  max-width: 75%;
+}
+
+.container-slide .col-4 .man {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0.625rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(54, 69, 79);
+  background-color: rgb(255, 255, 255);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+input[type="radio" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
+}
+
+.container-slide .col-4 .man-1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.container-slide .col-4 .gbr-man {
+  vertical-align: middle;
+  border-style: none;
+  overflow: hidden;
+  margin-bottom: 0.9375rem;
+}
+
+.container-slide .col-4 .man-2 {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(54, 69, 79);
+}
+
+.container-slide .col-4 .woman {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(54, 69, 79);
+}
+
+.container-slide .man-1 > input[type="radio"]:not(:checked) ~ * {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.container-slide .col-4 {
+  img[Attributes Style] {
+    width: 50px;
+    aspect-ratio: auto 50 / 50;
+    height: 50px;
+  }
+}
+
+.container-slide .col-4 .poppins {
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* KELOMPOK USIA-BERAT-TINGGI */
+.container-slide .col-4 .bb-2 {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 1;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  flex: 0 0 66.6667%;
+  max-width: 66.6667%;
+}
+
+.container-slide .col-4 .kelompok {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+}
+
+.container-slide .col-4 .kelompok-1 {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 1;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+.container-slide .col-4 .usia {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container-slide .col-4 .usia-1 {
+  margin: 0px 0px 0.9375rem;
+  padding: 0px;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(54, 69, 79);
+  text-align: center;
+}
+
+.container-slide .col-4 .usia-2 {
+  overflow: hidden;
+  border-color: rgb(217, 0, 27);
+}
+
+.container-slide .col-4 .usia-3 {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0.625rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(54, 69, 79);
+  background-color: rgb(255, 255, 255);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.container-slide .col-4 .age-1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.container-slide .col-4 .age-1 > input[type="text"] {
+  border: none;
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  outline: none;
+  color: rgb(43, 142, 142);
+}
+
+.container-slide .col-4 .age-2 {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(167, 167, 167);
+}
+
+.container-slide .col-4 .usia-antara {
+  margin: 0.625rem 0px;
+  padding: 0px;
+  display: block;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: rgb(217, 0, 27);
+  text-align: center;
+}
+
+/* BUTTON */
+.container-slide .col-4 .align-middle {
+  display: block;
+  width: 50%;
+  font-family: inherit;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  background-color: rgb(112, 203, 207);
+  border: 5px solid rgb(112, 203, 207);
+  font-size: 32px;
+  padding: 5px 15px;
+  border-radius: 0.25rem;
+  user-select: none;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  margin-bottom: 1.25rem;
+  float: right;
+  margin-right: 150px;
+}
+
+/* PROGRAM */
+.jumbotron-program {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 695px;
+  left: 0px;
+
+  background-color: rgba(249, 230, 230, 0.78);
+}
+
+.jumbotron-program .container-program {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron-program .tulis {
+  margin: 0 auto;
+  width: 485px;
+  height: 82px;
+  left: 500px;
+  top: 42px;
+
+  background: #ed9e9e;
+}
+
+.jumbotron-program .display-5-1 {
+  width: 485px;
+  height: 82px;
+  top: 42px;
+  justify-content: center;
+
+  font-family: Quintessential;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 95px;
+  text-align: center;
+
+  color: #fff7f7;
+}
+
+.jumbotron-program .row {
+  width: 1250px;
+  height: 550px;
+  padding-left: 250px;
+  top: 65px;
+}
+
+.jumbotron-program .col-sm-6 {
+  card-group-margin: center;
+  width: 500px;
+  height: 700px;
+}
+
+/* PROGRAM */
+.jumbotron-food {
+  position: relative;
+  height: 700px;
+  left: 0px;
+
+  background-color: rgba(249, 230, 230, 0.78);
+}
+
+.jumbotron-food .container-food {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron-food .container-2 {
+  margin-top: 25px;
+  justify-content: center;
+  margin-left: 200px;
+  width: 1200px;
+  height: 500px;
+  background: #cea0d8;
+}
+
+.jumbotron-food .tulis-1 {
+  margin: 0 auto;
+  width: 485px;
+  height: 82px;
+  left: 300px;
+  top: 42px;
+
+  background: #be58a8;
+}
+
+.jumbotron-food .display-5-2 {
+  width: 485px;
+  height: 82px;
+  top: 42px;
+  justify-content: center;
+
+  font-family: Quintessential;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 95px;
+  text-align: center;
+
+  color: #fff7f7;
+}
+
+.jumbotron-food .row {
+  width: 1250px;
+  height: 550px;
+  padding-left: 100px;
+  top: 150px;
+}
+
+.jumbotron-food .col-md-6 {
+  justify-content: center;
+  width: 500px;
+  height: 700px;
+}
+
+/* PRODUK */
+.container-produk {
+  left: 0;
+  background: #f1d2d2;
+  position: absolute;
+  width: 1519px;
+  top: 650px;
+  height: 700px;
+}
+
+.container-produk .img-top-fix {
+  border-radius: 5px;
+}
+/* FOOTER */
+.footer {
+  clear: both;
+  display: block;
+  margin-top: 1350px;
+  font-style: italic;
+  height: 50px;
+  line-height: 50px;
+  background: rgb(231, 151, 151);
+  color: rgb(228, 133, 133);
+  position: relative;
+  bottom: 0px;
+  left: 0;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  /* Navbar  */
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(211, 96, 96);
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  /* Jumbotron */
+  .jumbotron {
+    top: 30px;
+    height: 736px;
+  }
+
+  .jumbotron .display-5 {
+    margin-top: 137px;
+    padding-left: 70px;
+    font-size: 70px;
+  }
+
+  .jumbotron .col-md-8 {
+    padding-left: 70px;
+    font-size: 40px;
+  }
+
+  /* SLIDE 1 */
+  .container-slide {
+    position: absolute;
+    width: 1440px;
+    height: 700px;
+    top: 736px;
+  }
+
+  .container-slide .row {
+    width: 1300px;
+    height: 550px;
+    left: 110px;
+    top: 65px;
+    border: 2px dashed rgb(52, 149, 173);
+  }
+
+  .container-slide .img-fluid {
+    width: 378px;
+    height: 487px;
+    left: 50px;
+    top: 30px;
+  }
+
+  .container-slide .col-sm-9 .col-8 {
+    position: absolute;
+    top: 30px;
+    width: 60px;
+    height: 500px;
+    left: 527px;
+
+    font-family: Harlow Solid Italic;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: center;
+
+    color: #994343;
+  }
+
+  .container-slide .col-sm-9 .row-2 .col-4 {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 1.875rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+
+  /* FORM */
+
+  /* HITUNG BERAT BADAN */
+  .container-slide .col-4 .bb {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 450px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-right: 150px;
+  }
+
+  .container-slide .col-4 .gender {
+    vertical-align: middle;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 1;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .container-slide .col-4 .gd {
+    margin: 0px 0px 0.9375rem;
+    padding: 0px;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(54, 69, 79);
+    text-align: center;
+  }
+
+  .container-slide .col-4 .input-male {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .container-slide .col-4 .male {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 1;
+    padding-left: -20px;
+    padding-right: -20px;
+    flex: 0 0 50%;
+    max-width: 75%;
+  }
+
+  .container-slide .col-4 .man {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0.625rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(54, 69, 79);
+    background-color: rgb(255, 255, 255);
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+  }
+
+  .container-slide .col-4 .man-1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-slide .col-4 .gbr-man {
+    vertical-align: middle;
+    border-style: none;
+    overflow: hidden;
+    margin-bottom: 0.9375rem;
+  }
+
+  .container-slide .col-4 .man-2 {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(54, 69, 79);
+  }
+
+  .container-slide .col-4 .woman {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(54, 69, 79);
+  }
+
+  .container-slide .man-1 > input[type="radio"]:not(:checked) ~ * {
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+
+  img[Attributes Style] {
+    width: 50px;
+    aspect-ratio: auto 50 / 50;
+    height: 50px;
+  }
+
+  .container-slide .col-4 .poppins {
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  /* KELOMPOK USIA-BERAT-TINGGI */
+  .container-slide .col-4 .bb-2 {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 1;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  .container-slide .col-4 .kelompok {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
+  }
+
+  .container-slide .col-4 .kelompok-1 {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 1;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .container-slide .col-4 .usia {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .container-slide .col-4 .usia-1 {
+    margin: 0px 0px 0.9375rem;
+    padding: 0px;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(54, 69, 79);
+    text-align: center;
+  }
+
+  .container-slide .col-4 .usia-2 {
+    overflow: hidden;
+    border-color: rgb(217, 0, 27);
+  }
+
+  .container-slide .col-4 .usia-3 {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0.625rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(54, 69, 79);
+    background-color: rgb(255, 255, 255);
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .container-slide .col-4 .age-1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-slide .col-4 .age-1 > input[type="text"] {
+    border: none;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    outline: none;
+    color: rgb(43, 142, 142);
+  }
+
+  .container-slide .col-4 .age-2 {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(167, 167, 167);
+  }
+
+  .container-slide .col-4 .usia-antara {
+    margin: 0.625rem 0px;
+    padding: 0px;
+    display: block;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: rgb(217, 0, 27);
+    text-align: center;
+  }
+
+  /* BUTTON */
+  .container-slide .col-4 .align-middle {
+    display: block;
+    width: 50%;
+    font-family: inherit;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    background-color: rgb(112, 203, 207);
+    border: 5px solid rgb(112, 203, 207);
+    font-size: 32px;
+    padding: 5px 15px;
+    border-radius: 0.25rem;
+    user-select: none;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-bottom: 1.25rem;
+    float: right;
+    margin-right: 150px;
+  }
+}
